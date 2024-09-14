@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+<main>
+<head>
+    <h1>Formulario Actividad 1 HTML
+    </h1>
+    <img src="imagenes/formulario.jpg" alt="">
+
+    <h2>A continuación usted podrá observar un formulario que debe ser complete diligenciado ya que todos los campos son obligatorios, Se agradecer el correcto diligenciamiento del mismo. el aprendiz debe modificar el html para su correcto funcionamiento.
+    </h2>        
+ </head>        
+</main>
+</head>
+<body>
+    <form action="index.html" method="get" enctype="multipart/form-data">
+        <div>
+        <label for="Nombre" id="Nombre"> Nombre: </label>
+        <input type ="text" name="Nombre" placeholder= "Escribe el nombre" minlength="10" maxlength="30"  pattern="^[a-zA-Z]*$" id="nombre"  autocomplete="off" required	>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <label for="Apellido" id="Apellido" > Apellido: </label>
+        <input type ="text" name="Apellido" placeholder= "Escribe el Apellido" minlength="10" maxlength="30"  pattern="^[a-z]*$" id="Apellido"  autocomplete="off" required	>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+        <p>Elige tu color favorito</p><input type="color">  
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+        <label for="edad" > Edad: </label>
+        <input name="edad" type="text" id="edad" pattern="[0-9]{2}"  placeholder="Edad" required>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+        <label for="numero" > Números: </label>
+        <input name="numero" type="text" pattern="[0-9]"  placeholder="Ingresa tu número favorito"  requiered>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+        <label for="positivos" > Positivos: </label>
+        <input name="positivos" type="number" placeholder="Ingresa solo números positivos" min="0" step="1" oninput="this.value = Math.abs(this.value)" requiered>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+        <label for="maximo-minimo" > Maximo-Minimo:  </label>
+        <input type="number" min="10" max="20" step="0.5" value="15" requiered>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+        <label for="Fecha_Nacimiento" > Fecha nacimiento: </label>
+        <input type="date" requiered >
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+        <label for="Hora_Registro" > Hora de Registro: </label>
+        <input type="time" requiered >
+        </div>
+        <br>
+        <br>
+        <br> 
+        <div>
+        <label for="ciudad">¿De qué ciudad eres?</label>
+        <select name="ciudad" id="ciudad">
+            <option value="Bogotá">Bogotá</option>
+            <option value="Medellín">Medellín</option>
+            <option value="Cali">Cali</option>
+            <option value="Barranquilla">Barranquilla</option>
+            <option value="Cartagena">Cartagena</option>
+            <option value="Bucaramanga">Bucaramanga</option>
+            <option value="Pereira">Pereira</option>
+            <option value="SantaMarta">Santa Marta</option>
+            <option value="Manizales">Manizales</option>
+            <option value="Villavicencio">Villavicencio</option>
+            <option value="Cúcuta">Cúcuta</option>
+            <option value="Ibagué">Ibagué</option>
+            <option value="Pasto">Pasto</option>
+            <option value="Montería">Montería</option>
+            <option value="Neiva">Neiva</option>
+            <option value="Valledupar">Valledupar</option>
+            <option value="Popayán">Popayán</option>
+            <option value="Armenia">Armenia</option>
+            <option value="Tunja">Tunja</option>
+            <option value="Riohacha">Riohacha</option>
+            <option value="Sincelejo">Sincelejo</option>
+            <option value="Floridablanca">Floridablanca</option>
+            <option value="Soledad">Soledad</option>
+            <option value="Buenaventura">Buenaventura</option>
+            <option value="Palmira">Palmira</option>
+            <option value="Tuluá">Tuluá</option>
+            <option value="Envigado">Envigado</option>
+            <option value="Bello">Bello</option>
+            <option value="Itagüí">Itagüí</option>
+            <option value="Dosquebradas">Dosquebradas</option>
+            <option value="Soacha">Soacha</option>
+            <option value="Zipaquirá">Zipaquirá</option>
+            <option value="Malambo">Malambo</option>
+            <option value="Maicao">Maicao</option>
+            <option value="Sogamoso">Sogamoso</option>
+            <option value="Duitama">Duitama</option>
+            <option value="Quibdó">Quibdó</option>
+            <option value="Yopal">Yopal</option>
+        </select>
+        </div>
+
+         <br>
+         <br>
+         <br>
+
+        <div>           
+        <p> ¿Cuál es tu género? </p>
+        </div>
+
+        <div> 
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="genero" id="hombre"> 
+
+        </div>
+
+        <div>
+        <label for="mujer">Mujer</label>
+        <input type="radio" name="genero" id="mujer">
+        </div>
+
+        <div>
+        <label for="otro">Otro</label>
+        <input type="radio" name="genero" id="otro">
+        </div>
+       
+        <br>
+        <br>
+        <br>
+
+        <div>
+        <label for="materias">Selecciona tus materias:</label>
+        <div>
+            <input type="checkbox" name= "tipo[]" id="html">
+            <label for="html">HTML</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name= "tipo[]" id="CSS">
+            <label for="CSS">CSS</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name= "tipo[]" id="JavaScript">
+            <label for="JavaScript">JavaScript</label>
+            
+       </div>
+
+       <div>
+        <input type="checkbox" name= "tipo[]" id="JAVA">
+        <label for="JAVA">JAVA</label>
+        
+        </div>
+        <div>
+            <input type="checkbox" name= "tipo[]" id="PYTHON">
+            <label for="PYTHON">PHYTON</label>
+            
+            </div>
+        <div>
+        <input type="checkbox" name= "tipo[]" id="PHP">
+        <label for="PHP">PHP</label>
+                
+        </div>
+
+      
+
+       <br>
+       <br>
+       <br> 
+
+       <div>
+       <form id="imagenes">
+        <label for="imagenes">Selecciona tus imágenes (solo .jpg, .png):</label>
+        <input type="file" id="imagenes" name="imagenes" accept=".jpg, .png" multiple required>
+        </form>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <div>
+        <form id="login">
+            <label for="contraseña">Ingresa tu contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <br>
+        <br>
+        <br>
+        <div>
+        <form id="NombreCompleto">
+        <label for="NombreCompleto">Nombre del aprendiz:</label>
+        <input type="text" onclick="getFullName(id)">
+        <button type="submit">Enviar</button>
+        </form>
+        </div>
+
+       
+        
+
+
+         
+
+            
+        
+    
+</body>
+</html>
